@@ -1,6 +1,6 @@
 # Stanford Core NLP for Mandeville's Fable of the Bees amnogs other texts
 
-Check (The Core NLP demo)[http://corenlp.run/] for reference on output.
+Check [The Core NLP demo](http://corenlp.run/) for reference on output.
 
 ## Installation
 
