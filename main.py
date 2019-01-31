@@ -2,6 +2,7 @@ import json
 from stanfordcorenlp import StanfordCoreNLP
 import os
 import unicodedata
+from lib.common import create_dir_if_not_exists
 
 
 def read_input_txt(txt_file):
@@ -48,8 +49,13 @@ def process_file(inputfile, outputdir, nlp, props):
 nlp_path = ('/home/local/vvaara/projects' +
             '/common-libs/stanford-nlp/stanford-corenlp-full-2018-02-27')
 
-inputdir = 'input/fb/'
-outputdir = 'output/fb/'
+# this one points to the dataset
+datasetdir = "fb2"
+inputdir = 'input/' + datasetdir + "/"
+outputdir = 'output/' + datasetdir + "/"
+for path in [inputdir, outputdir]:
+    create_dir_if_not_exists(path)
+
 inputfiles = get_inputfiles(inputdir)
 
 print("   > Setting up core NLP.")

@@ -18,11 +18,11 @@ All the required (and then some) packages are listed in [requirements.txt](./req
 
 ## Running
 
-Run `main.py`. To change the annotators used, adjust the 'annotators' key in `props` -variable.
+Run `main.sh`. To change the annotators used, adjust the 'annotators' key in `props` -variable.
 
 ## Input
 
-Input is plain txt. Change the input file variable in the above file.
+Input is plain txt. Change the input path variable in `main.py`.
 
 ## Output
 
